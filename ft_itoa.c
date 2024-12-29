@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static int	ft_countdigits(int n)
+static int	ft_countdigits_itoa(int n)
 {
 	int count;
 
@@ -50,7 +50,7 @@ char		*ft_itoa(int n)
 
 	if (n == 0 || n == -2147483648)
 		return (ft_special_cases(n));
-	count = ft_countdigits(n);
+	count = ft_countdigits_itoa(n);
 	neg = 0;
 	if (n < 0)
 	{
